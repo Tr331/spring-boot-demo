@@ -11,7 +11,7 @@ public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long studentId;
     private String name;
     private String emailId;
     private LocalDate dateOfBirth;
@@ -21,8 +21,8 @@ public class Student {
     public Student() {
     }
 
-    public Student(long id, String name, String emailId, LocalDate dateOfBirth) {
-        this.id = id;
+    public Student(long studentId, String name, String emailId, LocalDate dateOfBirth) {
+        this.studentId = studentId;
         this.name = name;
         this.emailId = emailId;
         this.dateOfBirth = dateOfBirth;
@@ -34,12 +34,12 @@ public class Student {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public long getId() {
-        return id;
+    public long getStudentId() {
+        return studentId;
     }
 
-    public void setId(long id) {
-        this.id = id;
+    public void setStudentId(long studentId) {
+        this.studentId = studentId;
     }
 
     public String getName() {
@@ -77,7 +77,7 @@ public class Student {
     @Override
     public String toString() {
         return "Student{" +
-                "id=" + id +
+                "studentId=" + studentId +
                 ", name='" + name + '\'' +
                 ", emailId='" + emailId + '\'' +
                 ", dateOfBirth=" + dateOfBirth +
