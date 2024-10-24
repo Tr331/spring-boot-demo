@@ -41,6 +41,8 @@ GET http://localhost:8080/student
         "dateOfBirth": "2000-07-27",
         "age": 24
     }
+
+]
 ```
 
 ![image](https://github.com/user-attachments/assets/43a5d4ef-8f20-40c9-b79c-046b4e03172e)
