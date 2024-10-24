@@ -73,7 +73,7 @@ DELETE http://localhost:8080/student/{id}
 ![image](https://github.com/user-attachments/assets/c5f567c6-d003-405b-856a-f93653aa7054)
 
 
-### Update Student (Coming Soon)
+### Update Student
 ```http
 PUT http://localhost:8080/student/{id}?name=name&emailId=name@email.com
 ```
