@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/9c4b17f1-57a6-4318-aa5f-c1e0bcce0c64)# Spring Boot Student Register REST API
+# Spring Boot Student Register REST API
 
 A simple Spring Boot REST API to manage student data. This project demonstrates basic CRUD operations and serves as an introduction to building RESTful web services using Spring Boot.
 
