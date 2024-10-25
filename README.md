@@ -5,8 +5,11 @@ A simple Spring Boot REST API to manage student data. This project demonstrates 
 ## Features
 
 ✅ Create new students
+<br />
 ✅ Retrieve student information
+<br />
 ✅ Delete student records
+<br />
 ✅ Update student information
 
 ## Technology Stack
