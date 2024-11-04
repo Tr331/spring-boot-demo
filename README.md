@@ -1,12 +1,15 @@
-![image](https://github.com/user-attachments/assets/9c4b17f1-57a6-4318-aa5f-c1e0bcce0c64)# Spring Boot Student Register REST API
+# Spring Boot Student Register REST API
 
 A simple Spring Boot REST API to manage student data. This project demonstrates basic CRUD operations and serves as an introduction to building RESTful web services using Spring Boot.
 
 ## Features
 
 ✅ Create new students
+<br />
 ✅ Retrieve student information
+<br />
 ✅ Delete student records
+<br />
 ✅ Update student information
 
 ## Technology Stack
@@ -41,6 +44,8 @@ GET http://localhost:8080/student
         "dateOfBirth": "2000-07-27",
         "age": 24
     }
+
+]
 ```
 
 ![image](https://github.com/user-attachments/assets/43a5d4ef-8f20-40c9-b79c-046b4e03172e)
@@ -73,7 +78,7 @@ DELETE http://localhost:8080/student/{id}
 ![image](https://github.com/user-attachments/assets/c5f567c6-d003-405b-856a-f93653aa7054)
 
 
-### Update Student (Coming Soon)
+### Update Student
 ```http
 PUT http://localhost:8080/student/{id}?name=name&emailId=name@email.com
 ```
