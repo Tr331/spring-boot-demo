@@ -65,4 +65,14 @@ public class StudentService {
             student.setEmailId(emailId);
         }
     }
+
+    public Student getStudentByID(Long studentId) {
+        Optional<Student> studentOptional = studentRepository.findById(studentId);
+
+        if (studentOptional.isPresent()){
+            return studentOptional.get();
+        }else {
+            throw new IllegalStateException("Student with id "+studentId+" is not present!");
+        }
+    }
 }

@@ -23,6 +23,11 @@ public class StudentController {
         return studentService.getAllStudents();
     }
 
+    @GetMapping(path="{studentId}")
+    public Student getStudentByID(@PathVariable("studentId") Long studentId){
+        return studentService.getStudentByID(studentId);
+    }
+
     @PostMapping
     public void registerNewStudent(@RequestBody Student student){
         studentService.addNewStudent(student);
