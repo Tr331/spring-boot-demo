@@ -1,12 +1,17 @@
 package com.example.student.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDate;
 import java.time.Period;
 
 @Entity
 @Table
+@Data
+@NoArgsConstructor
 public class Student {
 
     @Id
@@ -17,9 +22,6 @@ public class Student {
     private LocalDate dateOfBirth;
     @Transient
     private int age;
-
-    public Student() {
-    }
 
     public Student(long studentId, String name, String emailId, LocalDate dateOfBirth) {
         this.studentId = studentId;
@@ -34,54 +36,7 @@ public class Student {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public long getStudentId() {
-        return studentId;
-    }
-
-    public void setStudentId(long studentId) {
-        this.studentId = studentId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmailId() {
-        return emailId;
-    }
-
-    public void setEmailId(String emailId) {
-        this.emailId = emailId;
-    }
-
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
-    }
-
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
-    }
-
     public int getAge() {
-        return Period.between(this.dateOfBirth,LocalDate.now()).getYears();
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    @Override
-    public String toString() {
-        return "Student{" +
-                "studentId=" + studentId +
-                ", name='" + name + '\'' +
-                ", emailId='" + emailId + '\'' +
-                ", dateOfBirth=" + dateOfBirth +
-                ", age=" + age +
-                '}';
+        return Period.between(this.dateOfBirth, LocalDate.now()).getYears();
     }
 }
